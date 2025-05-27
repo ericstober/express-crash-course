@@ -1,4 +1,4 @@
-const express = require("express");
+import express from "express";
 const router = express.Router();
 
 // Test post data
@@ -31,4 +31,4 @@ router.get("/:id", (req, res) => {
   res.status(200).json(post);
 });
 
-module.exports = router;
+export default router;
